@@ -5,7 +5,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'placeanad',
+    redirectTo: 'homepage',
     pathMatch: 'full'
   },
   {
@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'tabletsmobiles',
     loadChildren: () => import('./tabletsmobiles/tabletsmobiles.module').then( m => m.TabletsmobilesPageModule)
+  },
+  {
+    path: 'homepage',
+    loadChildren: () => import('./homepage/homepage.module').then( m => m.HomepagePageModule)
   },
 ];
 
