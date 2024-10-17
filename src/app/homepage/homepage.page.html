@@ -1,30 +1,35 @@
-
-
 <ion-content [fullscreen]="true">
-<ion-item >
-  <ion-searchbar></ion-searchbar>
-  <ion-icon name="notifications-outline"></ion-icon>
-</ion-item>
+  <ion-item>
+    <ion-searchbar></ion-searchbar>
+    <ion-icon name="notifications-outline"></ion-icon>
+  </ion-item>
   <ion-row class="colcard">
-    <ion-col  >
-<ion-card class="columns">
-  <ion-icon name="business-outline"></ion-icon>
-<br>
-  place an ad
-</ion-card>
-    </ion-col>
-    <ion-col  >
-<ion-card class="columns">
 
-  <ion-icon name="phone-portrait-outline"></ion-icon><br>
-  mobile ad
-</ion-card>
+    <ion-col [routerLink]="['/placeanad']">
+      <ion-button fill="clear"  >
+        <ion-card class="columns">
+          <ion-icon name="business-outline" style="color: #ff0000; font-size: 30px;"></ion-icon>
+          <br>
+
+
+          place an ad
+        </ion-card>
+      </ion-button>
+
     </ion-col>
-    <ion-col  >
-<ion-card class="columns" >
-  <ion-icon name="tablet-landscape-outline"></ion-icon><br>
-  tablets and mobiles ad
-</ion-card>
+
+    <ion-col>
+      <ion-card class="columns">
+
+        <ion-icon name="phone-portrait-outline" style="color: #ff0000; font-size: 30px;"></ion-icon><br>
+        mobile ad
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="columns">
+        <ion-icon name="tablet-landscape-outline" style="color: #ff0000; font-size: 30px;"></ion-icon><br>
+        tablets and mobiles ad
+      </ion-card>
     </ion-col>
   </ion-row>
 </ion-content>
@@ -38,16 +43,19 @@
       Favorities
     </ion-tab-button>
     <ion-tab-button>
-      <ion-icon name="add-circle-outline"></ion-icon>      Sell
+      <ion-icon name="add-circle-outline" style="color: #ff0000; font-size: 40px; top: 40px;"></ion-icon> <span
+        style="position: relative;">Sell</span>
     </ion-tab-button>
     <ion-tab-button>
       <ion-icon name="chatbox-outline"></ion-icon>
       Chat
     </ion-tab-button>
-    <ion-tab-button>
+    <ion-tab-button  >
       <ion-icon name="menu-outline"></ion-icon>
       Menu
     </ion-tab-button>
 
   </ion-tab-bar>
 </ion-tabs>
+
+  <!-- <ion-button fill="clear" [routerLink]="['/placeanad']"  >homepage</ion-button> -->

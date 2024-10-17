@@ -5,7 +5,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'homepage',
+    redirectTo: 'mobilephones',
     pathMatch: 'full'
   },
   {
@@ -24,6 +24,10 @@ const routes: Routes = [
   {
     path: 'homepage',
     loadChildren: () => import('./homepage/homepage.module').then( m => m.HomepagePageModule)
+  },
+  {
+    path: 'mobiledetails',
+    loadChildren: () => import('./mobiledetails/mobiledetails.module').then( m => m.MobiledetailsPageModule)
   },
 ];
 
